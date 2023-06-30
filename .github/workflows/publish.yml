@@ -16,8 +16,10 @@ jobs:
           dotnet-version: 6.0.x
 
       - name: github ref_name
-        run: echo ${{github.ref_name}}
-
-      - name: build
-        run:  dotnet build -c release
-          
+        run: |
+          REF_NAME=${{github.ref_name}}
+          echo "${REF_NAME#v}"
+#
+#      - name: build
+#        run:  dotnet build -c release
+#          
