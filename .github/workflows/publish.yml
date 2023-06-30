@@ -28,4 +28,4 @@ jobs:
           ls -l dist
 
       - name: nuget publish
-        run: dotnet nuget push dist/*nupkg -k ${{secrets.NUGET_API_KEY}}
+        run: dotnet nuget push dist/*nupkg -Source 'https://api.nuget.org/v3/index.json' -ApiKey ${{secrets.NUGET_API_KEY}}
