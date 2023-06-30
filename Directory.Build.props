@@ -1,6 +1,6 @@
 <Project>
     <PropertyGroup>
-        <PackageVersion>1.0.0</PackageVersion>
+        <PackageVersion>$(Version)</PackageVersion>
         <Authors>Ziya Suzen</Authors>
         <Description>Dummy package to test NuGet publishing.</Description>
         <Copyright>Copyright (c) Ziya Suzen 2023</Copyright>

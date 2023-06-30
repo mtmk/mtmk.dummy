@@ -5,8 +5,8 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
 
-        <IncludeSymbols>true</IncludeSymbols>
-        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+<!--        <IncludeSymbols>true</IncludeSymbols>-->
+<!--        <SymbolPackageFormat>snupkg</SymbolPackageFormat>-->
     </PropertyGroup>
 
     <ItemGroup>

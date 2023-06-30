@@ -21,11 +21,11 @@ jobs:
           echo "PACKAGE_VERSION=${REF_NAME#v}" >> $GITHUB_ENV
 
       - name: pack
-        run: dotnet pack -p:PackageVersion=$PACKAGE_VERSION mtmk.dummy/mtmk.dummy.csproj -o dist
+        run: dotnet pack -c Release -p:Version=$PACKAGE_VERSION mtmk.dummy/mtmk.dummy.csproj -o dist
 
       - name: check
         run: |
           ls -l dist
 
       - name: nuget publish
-        run: dotnet nuget push dist/*nupkg -s https://api.nuget.org/v3/index.json -k ${{ secrets.NUGET_API_KEY }}
+        run: dotnet nuget push dist/*.nupkg -s https://api.nuget.org/v3/index.json -k ${{ secrets.NUGET_API_KEY }}
