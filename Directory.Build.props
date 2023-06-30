@@ -1,0 +1,17 @@
+<Project>
+    <PropertyGroup>
+        <PackageVersion>1.0.0</PackageVersion>
+        <Authors>Ziya Suzen</Authors>
+        <Description>Dummy package to test NuGet publishing.</Description>
+        <Copyright>Copyright (c) Ziya Suzen 2023</Copyright>
+        <PackageLicenseExpression>MIT OR Apache-2.0</PackageLicenseExpression>
+        <PackageProjectUrl>https://github.com/mtmk/mtmk.dummy</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/mtmk/mtmk.dummy</RepositoryUrl>
+        <PackageIcon>dummy.png</PackageIcon>
+        <PackageTags>dummy</PackageTags>
+        <PackageReleaseNotes>This is a dummy release.</PackageReleaseNotes>
+    </PropertyGroup>
+    <PropertyGroup>
+        <Deterministic>true</Deterministic>
+    </PropertyGroup>
+</Project>

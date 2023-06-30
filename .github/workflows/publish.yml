@@ -1,0 +1,20 @@
+---
+name: publish
+on: workflow_dispatch
+jobs:
+  nuget_publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: install dotnet
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 6.0.x
+
+      - name: build
+        run:  dotnet build -c release
+          
