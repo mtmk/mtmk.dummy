@@ -11,6 +11,7 @@
 
     <ItemGroup>
         <None Include="../dummy.png" Pack="true" Visible="false" PackagePath="" />
+        <None Include="../README.md" Pack="true" PackagePath=""/>
     </ItemGroup>
 
 </Project>

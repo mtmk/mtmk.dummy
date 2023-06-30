@@ -8,6 +8,7 @@
         <PackageProjectUrl>https://github.com/mtmk/mtmk.dummy</PackageProjectUrl>
         <RepositoryUrl>https://github.com/mtmk/mtmk.dummy</RepositoryUrl>
         <PackageIcon>dummy.png</PackageIcon>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageTags>dummy</PackageTags>
         <PackageReleaseNotes>This is a dummy release.</PackageReleaseNotes>
     </PropertyGroup>
