@@ -26,3 +26,6 @@ jobs:
       - name: check
         run: |
           ls -l dist
+
+      - name: nuget publish
+        run: dotnet nuget push dist/*nupkg -k ${{secrets.NUGET_API_KEY}}
