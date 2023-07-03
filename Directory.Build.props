@@ -1,6 +1,6 @@
 <Project>
     <PropertyGroup>
-        <PackageVersion>$(Version)</PackageVersion>
+        <PackageVersion>$([System.IO.File]::ReadAllText("$(MSBuildThisFileDirectory)version.txt"))</PackageVersion>
         <Authors>Ziya Suzen</Authors>
         <Description>Dummy package to test NuGet publishing.</Description>
         <Copyright>Copyright (c) Ziya Suzen 2023</Copyright>

@@ -1,6 +1,7 @@
 ---
 name: publish
 on: workflow_dispatch
+permissions: { contents: write }
 jobs:
   nuget_publish:
     runs-on: ubuntu-latest
@@ -10,22 +11,41 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: install dotnet
+      - id: tag
+        name: Determine tag
+        run: |
+          version="$(head -n 1 version.txt)"
+          ref_name="v$version"
+          create=true
+          if ["$(git ls-remote origin "refs/tags/$ref_name" | wc -l)" = "1" ]; then
+            create=false
+          fi
+
+          echo "version=$version" | tee -a "$GITHUB_OUTPUT"
+          echo "ref-name=$ref_name" | tee -a "$GITHUB_OUTPUT"
+          echo "create=$create" | tee -a "$GITHUB_OUTPUT"
+          
+      - if: ${{ fromJSON(steps.tag.outputs.create) }}
+        name: install dotnet
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: 6.0.x
 
-      - name: github ref_name
-        run: |
-          REF_NAME=${{github.ref_name}}
-          echo "PACKAGE_VERSION=${REF_NAME#v}" >> $GITHUB_ENV
-
-      - name: pack
+      - if: ${{ fromJSON(steps.tag.outputs.create) }}
+        name: pack
         run: dotnet pack -c Release -p:Version=$PACKAGE_VERSION mtmk.dummy/mtmk.dummy.csproj -o dist
 
-      - name: check
+      - if: ${{ fromJSON(steps.tag.outputs.create) }}
+        name: check
         run: |
           ls -l dist
 
-      - name: nuget publish
+      - if: ${{ fromJSON(steps.tag.outputs.create) }}
+        name: nuget publish
         run: dotnet nuget push dist/*.nupkg -s https://api.nuget.org/v3/index.json -k ${{ secrets.NUGET_API_KEY }}
+
+      - if: ${{ fromJSON(steps.tag.outputs.create) }}
+        name: Tag
+        run: |
+          git tag "${{ steps.tag.outputs.ref-name }}"
+          git push origin "${{ steps.tag.outputs.ref-name }}"
