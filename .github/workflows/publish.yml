@@ -33,7 +33,7 @@ jobs:
 
       - if: ${{ fromJSON(steps.tag.outputs.create) }}
         name: pack
-        run: dotnet pack -c Release -p:Version=$PACKAGE_VERSION mtmk.dummy/mtmk.dummy.csproj -o dist
+        run: dotnet pack -c Release -o dist
 
       - if: ${{ fromJSON(steps.tag.outputs.create) }}
         name: check
