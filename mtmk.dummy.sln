@@ -18,6 +18,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{B9512B53-2
 		docs\docfx.json = docs\docfx.json
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mtmk.dummy.tests", "mtmk.dummy.tests\mtmk.dummy.tests.csproj", "{753F6600-2363-4A26-87C3-70CAB136E338}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{5DEC11A6-B6B1-466B-8666-EB75E34AD01F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DEC11A6-B6B1-466B-8666-EB75E34AD01F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DEC11A6-B6B1-466B-8666-EB75E34AD01F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{753F6600-2363-4A26-87C3-70CAB136E338}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{753F6600-2363-4A26-87C3-70CAB136E338}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{753F6600-2363-4A26-87C3-70CAB136E338}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{753F6600-2363-4A26-87C3-70CAB136E338}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{7FDFB2B8-B268-4688-AA89-673FA7DB2657} = {48270F51-0F28-4557-9716-6CD920453729}

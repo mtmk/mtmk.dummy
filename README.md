@@ -22,3 +22,9 @@ are published to NuGet.
 Currently `publish` workflow is set to be run manually by using `workflow_dispatch` trigger.
 You can set this to be triggered on push as well safely, since NuGet publish would only happen on
 changes to `version.txt` file as long as the version doesn't match any existing tags.
+
+## Targeting multiple frameworks
+
+You can target multiple frameworks by adding multiple `<TargetFramework>` elements in your
+project file. You can also use `TargetFrameworks` element to specify multiple frameworks
+separated by semicolon. You can also use wildcards in your framework names.
