@@ -1,5 +1,8 @@
 ﻿namespace mtmk.dummy.Others;
 
+/// <summary>
+/// Represents a generic thing.
+/// </summary>
 public class OtherThing
 {
     /// <summary>

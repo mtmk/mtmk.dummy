@@ -1,5 +1,8 @@
 ﻿namespace mtmk.dummy.Others;
 
+/// <summary>
+/// Represents a class that does something or nothing.
+/// </summary>
 public class Something
 {
     /// <summary>
