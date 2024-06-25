@@ -1,5 +1,8 @@
 ﻿namespace mtmk.dummy;
 
+/// <summary>
+/// Represents a simple text.
+/// </summary>
 public class SimpleText
 {
     /// <summary>
