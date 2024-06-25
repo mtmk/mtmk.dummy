@@ -4,10 +4,10 @@
         <PackageVersion>$(Version)</PackageVersion>
         <Authors>Ziya Suzen</Authors>
         <Description>Dummy package to test NuGet publishing.</Description>
-        <Copyright>Copyright (c) Ziya Suzen 2023</Copyright>
+        <Copyright>Copyright (c) Ziya Suzen 2024</Copyright>
         <PackageLicenseExpression>MIT OR Apache-2.0</PackageLicenseExpression>
-        <PackageProjectUrl>https://github.com/mtmk/mtmk.dummy</PackageProjectUrl>
-        <RepositoryUrl>https://github.com/mtmk/mtmk.dummy</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/mtmk/mtmk.dummy/tree/release/v1.1</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/mtmk/mtmk.dummy/tree/release/v1.1</RepositoryUrl>
         <PackageIcon>dummy.png</PackageIcon>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageTags>dummy</PackageTags>

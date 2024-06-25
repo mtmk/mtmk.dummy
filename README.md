@@ -1,4 +1,4 @@
-# mtmk.dummy
+# mtmk.dummy v1.1.x
 
 An example GitHub repository showing how a dotnet library can be published to nuget
 by maintaining a `version.txt` file and using git tags and GitHub actions.
