@@ -6,6 +6,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
 <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <WarningLevel>0</WarningLevel>
 <!--        <IncludeSymbols>true</IncludeSymbols>-->
 <!--        <SymbolPackageFormat>snupkg</SymbolPackageFormat>-->
     </PropertyGroup>
