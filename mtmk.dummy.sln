@@ -29,6 +29,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".", ".", "{0514B93E-8FE1-47
 		LICENSE = LICENSE
 		README.md = README.md
 		version.txt = version.txt
+		Default.runsettings = Default.runsettings
 	EndProjectSection
 EndProject
 Global
