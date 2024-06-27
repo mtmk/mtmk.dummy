@@ -8,6 +8,7 @@
         <WarningLevel>0</WarningLevel>
         <IsPackable>false</IsPackable>
         <IsTestProject>true</IsTestProject>
+        <SignAssembly>false</SignAssembly>
     </PropertyGroup>
 
     <ItemGroup>
