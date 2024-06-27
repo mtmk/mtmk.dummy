@@ -12,6 +12,7 @@
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageTags>dummy</PackageTags>
         <PackageReleaseNotes>This is a dummy release.</PackageReleaseNotes>
+        <SignAssembly>true</SignAssembly>
         <AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)sign.snk</AssemblyOriginatorKeyFile>
     </PropertyGroup>
     <PropertyGroup>
