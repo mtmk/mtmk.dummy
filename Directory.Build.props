@@ -2,9 +2,9 @@
     <PropertyGroup>
         <Version>$([System.IO.File]::ReadAllText("$(MSBuildThisFileDirectory)version.txt"))</Version>
         <PackageVersion>$(Version)</PackageVersion>
-        <Authors>Ziya Suzen</Authors>
+        <Authors>mtmk</Authors>
         <Description>Dummy package to test NuGet publishing.</Description>
-        <Copyright>Copyright (c) Ziya Suzen 2024</Copyright>
+        <Copyright>Copyright (c) mtmk 2024</Copyright>
         <PackageLicenseExpression>MIT OR Apache-2.0</PackageLicenseExpression>
         <PackageProjectUrl>https://github.com/mtmk/mtmk.dummy/tree/release/v1.1</PackageProjectUrl>
         <RepositoryUrl>https://github.com/mtmk/mtmk.dummy/tree/release/v1.1</RepositoryUrl>
